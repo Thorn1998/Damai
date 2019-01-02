@@ -5,6 +5,9 @@
 		<title>大麦网</title>
 		<link href="css/bootstrap.css" rel="stylesheet"/>
 		<style type="text/css">
+			.categray{
+				    border: #f5f5f5 solid;
+			}
 			.nav-button{
 				color: white;
 				border-radius: 0 10px 10px 0;
@@ -107,6 +110,41 @@
                 background: url(img/container/pic07.png) no-repeat;
                 background-size: 100% auto;
 			}
+			.show{
+				top: 72.5%;
+				background: #fff;
+                border: 1px solid #EBEBEB;
+                width: 80px;
+                position: fixed;
+                right: 10px;
+                top: 50%;
+                margin-top: -105px;
+                z-index: 9999;
+			}
+			.show .service{
+				height: 60px;
+                border-bottom: 1px solid #EBEBEB;
+                text-align: center;
+                padding-top: 10px;
+                color: #111;
+                font-size: 12px;
+                position: relative;
+                cursor: pointer;
+                box-sizing: content-box;
+			}
+
+			.show .download{
+				height: 60px;
+                border-bottom: 1px solid #EBEBEB;
+                text-align: center;
+                padding-top: 10px;
+                color: #111;
+                font-size: 12px;
+                position: relative;
+                cursor: pointer;
+                box-sizing: content-box;               
+			}
+			
 		</style>
 		<script src="js/jquery-3.0.0.js"></script>
 		<script src="js/bootstrap.js"></script>
@@ -147,7 +185,7 @@
 			
 		</div>
 		<!--分类-->
-		<div class="container">
+		<div class="container categray">
 			<div class="row">
 				<div class="col-md-1">
 				</div>
@@ -194,6 +232,20 @@
                 <div class="col-md-1">
                 </div>
             </div>	
+		</div>
+		<!--Show-->
+		<div class="show">
+			<div class="service">
+				<div class="service01"></div>
+				<p>在线客服</p>
+			</div>
+			<div class="download">
+				<div class="download01"></div>
+				<p>APP下载</p>
+				<div class="QR code">
+					<img src="img/container/pic15.png" width="72px" height="72px"/>
+				</div>
+			</div>			
 		</div>
 		<!--展示栏-->
 		<div class="container"></div>
